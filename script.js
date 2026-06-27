@@ -25,8 +25,16 @@ const originalMenuEl = document.getElementById("original-menu");
 const courseSelectionEl = document.getElementById("course-selection");
 const summaryEl = document.getElementById("summary");
 const statusMessage = document.getElementById("status-message");
+const submitBtn = document.getElementById("submit-btn");
 const allergyInput = document.getElementById("allergyInput");
 const allergyChipsEl = document.getElementById("allergyChips");
+
+/*
+ * Soft frontend duplicate-submit guard (same-device / same-browser only).
+ * Prevents accidental double submissions via localStorage; it is NOT server-side dedupe.
+ */
+const SUBMIT_LOCK_FLAG = "bodaAlergenosSubmitted";
+const SUBMIT_LOCK_META_KEY = "bodaAlergenosSubmittedMeta";
 
 function normalize(text) {
   return String(text)
@@ -362,6 +370,94 @@ function setStatus(message, type = "") {
   statusMessage.className = "status-message" + (type ? ` is-${type}` : "");
 }
 
+function showSubmittedSuccessNotice() {
+  statusMessage.className = "status-message success-notice";
+  statusMessage.innerHTML = `
+    <p class="success-notice__lead">Gracias, hemos recibido tu selección.</p>
+    <p class="success-notice__body">La revisaremos y la trasladaremos a la Masía. Si tienes cualquier duda o necesitas comentarnos algo más, ponte en contacto con nosotros.</p>
+  `;
+}
+
+function isSubmitLocked() {
+  try {
+    return localStorage.getItem(SUBMIT_LOCK_FLAG) === "true";
+  } catch (_) {
+    return false;
+  }
+}
+
+function saveSubmissionLock(payload) {
+  try {
+    localStorage.setItem(SUBMIT_LOCK_FLAG, "true");
+    localStorage.setItem(
+      SUBMIT_LOCK_META_KEY,
+      JSON.stringify({
+        submittedAt: payload.submittedAt,
+        fullName: payload.fullName,
+        selectedFirstName: payload.selectedFirstName,
+        selectedSecondName: payload.selectedSecondName,
+        selectedDessertName: payload.selectedDessertName,
+        firstName: payload.firstName,
+        lastName: payload.lastName,
+        selectedFirstId: payload.selectedFirstId,
+        selectedSecondId: payload.selectedSecondId,
+        selectedDessertId: payload.selectedDessertId,
+        allergies: payload.allergies,
+        comments: payload.comments,
+      })
+    );
+  } catch (_) {
+    /* ignore quota / private mode */
+  }
+}
+
+function restoreFormFromSubmissionMeta() {
+  try {
+    const raw = localStorage.getItem(SUBMIT_LOCK_META_KEY);
+    if (!raw) return;
+
+    const meta = JSON.parse(raw);
+    if (!meta || typeof meta !== "object") return;
+
+    if (meta.firstName) document.getElementById("firstName").value = meta.firstName;
+    if (meta.lastName) document.getElementById("lastName").value = meta.lastName;
+    if (typeof meta.comments === "string") {
+      document.getElementById("comments").value = meta.comments;
+    }
+
+    if (Array.isArray(meta.allergies)) {
+      guestAllergies = [...meta.allergies];
+      renderAllergyChipList();
+    }
+
+    if (meta.selectedFirstId && dishById[meta.selectedFirstId]) {
+      selections.primero = meta.selectedFirstId;
+    }
+    if (meta.selectedSecondId && dishById[meta.selectedSecondId]) {
+      selections.segundo = meta.selectedSecondId;
+    }
+    if (meta.selectedDessertId && dishById[meta.selectedDessertId]) {
+      selections.postre = meta.selectedDessertId;
+    }
+
+    renderCourseSelection();
+    updateSummary();
+  } catch (_) {
+    /* ignore malformed local storage */
+  }
+}
+
+function applySubmitLockUI() {
+  if (!submitBtn) return;
+  submitBtn.disabled = true;
+  showSubmittedSuccessNotice();
+}
+
+function restoreSubmitLockIfNeeded() {
+  restoreFormFromSubmissionMeta();
+  if (isSubmitLocked()) applySubmitLockUI();
+}
+
 async function submitPayload(payload) {
   if (!FORM_ENDPOINT || FORM_ENDPOINT.includes("PASTE_APPS_SCRIPT_WEB_APP_URL_HERE")) {
     console.log("Modo prueba payload:", payload);
@@ -401,6 +497,8 @@ async function submitForm(e) {
 
   if (document.getElementById("website").value.trim()) return;
 
+  if (isSubmitLocked()) return;
+
   const errors = validateForm();
   if (errors.length) {
     setStatus(errors[0], "error");
@@ -416,7 +514,8 @@ async function submitForm(e) {
   }
 
   if (result.ok) {
-    setStatus("Gracias, hemos recibido tu selección. La revisaremos y la trasladaremos a la Masía.", "success");
+    saveSubmissionLock(payload);
+    applySubmitLockUI();
     return;
   }
 
@@ -467,6 +566,7 @@ async function init() {
     renderAllergyChipList();
     updateSummary();
     bindEvents();
+    restoreSubmitLockIfNeeded();
   } catch (err) {
     console.error(err);
     originalMenuEl.innerHTML = `<p class="loading">No se pudo cargar el menú. Recarga la página.</p>`;
