@@ -1,0 +1,678 @@
+{
+  "metadata": {
+    "event": "Boda Dolo & Radha",
+    "date": "2026-07-25",
+    "venue": "Masía San Antonio de Poyo",
+    "needsHumanReview": false
+  },
+  "courses": {
+    "primero": {
+      "original": "primero-bacalao-emulsion-naranja-miel",
+      "options": [
+        "primero-bacalao-emulsion-naranja-miel",
+        "alt-primero-crema-calabaza-vieira",
+        "alt-primero-crema-zanahoria-quinoa",
+        "alt-primero-tataki-atun"
+      ]
+    },
+    "segundo": {
+      "original": "segundo-costilla-ternera-boniato-bimi",
+      "options": [
+        "segundo-costilla-ternera-boniato-bimi",
+        "alt-segundo-paletilla-cordero",
+        "alt-segundo-taco-merluza-romesco",
+        "alt-segundo-wellington-espinaca-setas"
+      ]
+    },
+    "postre": {
+      "original": "postre-tarta-maracuya-merengue",
+      "options": [
+        "postre-tarta-maracuya-merengue",
+        "alt-postre-bizcocho-chocolate-almendra",
+        "alt-postre-tarta-mousse-mascarpone",
+        "alt-postre-fruta-temporada"
+      ]
+    }
+  },
+  "originalMenu": {
+    "primero": {
+      "id": "primero-bacalao-emulsion-naranja-miel",
+      "type": "original",
+      "isOriginal": true,
+      "category": "primero",
+      "name": "Láminas de bacalao con emulsión de naranja y miel (frío)",
+      "ingredients": [
+        "bacalao",
+        "humo natural",
+        "naranja",
+        "aceituna negra",
+        "harina de trigo",
+        "almidón de maíz",
+        "perlas de miel (miel de naranjo, estabilizador: cloruro de calcio E509 y lactato de calcio E327, gelificante: alginato de sodio E401 y conservante: sorbato de potasio E202)",
+        "azúcar",
+        "gelificante (maltodextrina, espesante: goma xantana E415)",
+        "emulsionante en pasta (agua, emulgentes: ésteres poliglicèridos de ácidos grasos E475 y monoesterato de sorbitano polioxietinelado E435, dextrosa, edulcorante: sorbitol E420, emulgente: mono y diglicérdidos de ácidos grasos E471, corrector de acidez: ácido cítrico E330 y conservador: ácido sórbico E200)",
+        "estabilizante: gluconato ferroso",
+        "brotes tiernos",
+        "aceite de girasol",
+        "aceite de oliva",
+        "sal"
+      ],
+      "allergens": [
+        "gluten",
+        "pescado"
+      ],
+      "traces": [
+        "huevo",
+        "cacahuete",
+        "leche",
+        "apio",
+        "sésamo",
+        "mostaza",
+        "soja",
+        "sulfitos",
+        "frutos de cáscara"
+      ],
+      "notes": "",
+      "sourcePdf": "20260725 ALÉRGENOS Dolores y Radhames V1.pdf",
+      "sourcePage": 1,
+      "displayOrder": 1,
+      "image": null,
+      "needsReview": false
+    },
+    "segundo": {
+      "id": "segundo-costilla-ternera-boniato-bimi",
+      "type": "original",
+      "isOriginal": true,
+      "category": "segundo",
+      "name": "Costilla de ternera Angus deshuesada con cremoso de boniato y bimi salteado",
+      "ingredients": [
+        "costilla ternera Angus",
+        "boniato",
+        "bimi",
+        "mantequilla (pasteurizada)",
+        "manzana",
+        "pasta brick (harina de trigo, agua, conservantes: ácido sorbico y propinato de calcio, acidificantes: ácido cítrico, emulsionantes: lecitina de soja)",
+        "cebolla",
+        "puerro",
+        "zanahoria",
+        "vino tinto",
+        "salsa demiglace (harina de trigo, grasa y aceite vegetales (palma, girasol), azúcar, fécula de patata, potenciadores del sabor (glutamato monosódico, guanilato e inosinato disódico), tomate, aromas (contiene leche), maltodextrina, colorante: E150c, estabilizante: gomagarrofín, extracto de levadura, salsa de soja, zumo de remolacha, pimentón, pimienta, clavo, fructosa)",
+        "huevo",
+        "harina de maíz",
+        "lemon grass",
+        "jengibre",
+        "gelificante (alginato de sodio E401, estabilizante: sulfato de calcio E516 y secuestrante: difosfato tetrasódico E450iii)",
+        "aceite de oliva",
+        "sal"
+      ],
+      "allergens": [
+        "gluten",
+        "huevo",
+        "leche",
+        "soja",
+        "sulfitos"
+      ],
+      "traces": [
+        "cacahuete",
+        "apio",
+        "mostaza",
+        "sésamo",
+        "frutos de cáscara"
+      ],
+      "notes": "",
+      "sourcePdf": "20260725 ALÉRGENOS Dolores y Radhames V1.pdf",
+      "sourcePage": 1,
+      "displayOrder": 1,
+      "image": null,
+      "needsReview": false
+    },
+    "postre": {
+      "id": "postre-tarta-maracuya-merengue",
+      "type": "original",
+      "isOriginal": true,
+      "category": "postre",
+      "name": "Tarta clásica con crema de maracuyá y merengue",
+      "ingredients": [
+        "maracuyá",
+        "fruta de la pasión",
+        "huevo",
+        "harina de trigo",
+        "mantequilla (pasteurizada)",
+        "haba de cacao",
+        "jarabe de glucosa",
+        "azúcar",
+        "sal",
+        "aceites y grasas vegetales de palma",
+        "aceite de girasol",
+        "betacaroteno",
+        "azúcar con antiapelmazante E551",
+        "pectina E440ii",
+        "difosfato disódico E450i",
+        "dextrosa",
+        "fosfato tricálcico E341iii",
+        "frambuesa",
+        "hierbabuena"
+      ],
+      "allergens": [
+        "gluten",
+        "huevo",
+        "leche"
+      ],
+      "traces": [
+        "soja",
+        "frutos de cáscara"
+      ],
+      "notes": "",
+      "sourcePdf": "20260725 ALÉRGENOS Dolores y Radhames V1.pdf",
+      "sourcePage": 1,
+      "displayOrder": 1,
+      "image": null,
+      "needsReview": false
+    }
+  },
+  "alternatives": {
+    "primeros": [
+      {
+        "id": "alt-primero-crema-calabaza-vieira",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "primero",
+        "name": "Crema de calabaza con vieira y fondo de alcachofa confitada",
+        "ingredients": [
+          "vieira",
+          "alcachofa",
+          "calabaza",
+          "cebolla",
+          "aceite de oliva",
+          "sal"
+        ],
+        "allergens": [
+          "moluscos"
+        ],
+        "traces": [],
+        "notes": "",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 1,
+        "displayOrder": 2,
+        "image": "assets/dishes/alt-primero-crema-calabaza-vieira.png",
+        "needsReview": false
+      },
+      {
+        "id": "alt-primero-crema-zanahoria-quinoa",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "primero",
+        "name": "Crema de zanahoria y naranja con salteado de verduras y quinoa",
+        "ingredients": [
+          "quinoa",
+          "zanahoria",
+          "naranja",
+          "limón",
+          "tirabeques",
+          "judía",
+          "cebolla",
+          "nabo",
+          "chirivía",
+          "tomate",
+          "puerro",
+          "orejones",
+          "azúcar",
+          "jengibre",
+          "leche de coco",
+          "cayena",
+          "pimienta negra",
+          "aceite de oliva",
+          "sal"
+        ],
+        "allergens": [
+          "sulfitos"
+        ],
+        "traces": [],
+        "notes": "",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 1,
+        "displayOrder": 3,
+        "image": "assets/dishes/alt-primero-crema-zanahoria-quinoa.png",
+        "needsReview": false
+      },
+      {
+        "id": "alt-primero-tataki-atun",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "primero",
+        "name": "Tataki de atún sobre verduras al dente y crema de almendra",
+        "ingredients": [
+          "atún",
+          "cebolla roja",
+          "pimiento rojo",
+          "tirabeques",
+          "edamame",
+          "bimi",
+          "hierbas provenzales",
+          "azúcar",
+          "puerro",
+          "cebolla",
+          "almendra",
+          "aceite de oliva",
+          "sal"
+        ],
+        "allergens": [
+          "pescado",
+          "soja",
+          "frutos de cáscara"
+        ],
+        "traces": [
+          "crustáceos",
+          "moluscos"
+        ],
+        "notes": "",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 1,
+        "displayOrder": 4,
+        "image": "assets/dishes/alt-primero-tataki-atun.png",
+        "needsReview": false
+      }
+    ],
+    "segundos": [
+      {
+        "id": "alt-segundo-paletilla-cordero",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "segundo",
+        "name": "Paletilla de cordero con tartar de verduras y puré de chirivía",
+        "ingredients": [
+          "paletilla de cordero",
+          "zanahoria",
+          "calabacín",
+          "cebolla",
+          "chirivía",
+          "tomillo",
+          "romero",
+          "harina de maíz",
+          "aceite de oliva",
+          "sal"
+        ],
+        "allergens": [],
+        "traces": [],
+        "notes": "Documento indica «Alérgenos: no contiene».",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 1,
+        "displayOrder": 2,
+        "image": "assets/dishes/alt-segundo-paletilla-cordero.png",
+        "needsReview": false
+      },
+      {
+        "id": "alt-segundo-taco-merluza-romesco",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "segundo",
+        "name": "Taco de merluza con tapenade de aceituna sobre romesco",
+        "ingredients": [
+          "merluza",
+          "patata",
+          "tomate",
+          "pimiento rojo",
+          "vinagre de Jerez",
+          "aceituna verde",
+          "aceituna negra",
+          "pimiento piquillo",
+          "cebollino",
+          "perejil",
+          "ajo",
+          "romero",
+          "pan sin gluten (almidón de maíz, harina de arroz, fécula de patata, dextrosa, maltodextrina, levadura y estabilizantes)",
+          "aceite de oliva",
+          "sal"
+        ],
+        "allergens": [
+          "pescado",
+          "sulfitos"
+        ],
+        "traces": [
+          "crustáceos",
+          "moluscos"
+        ],
+        "notes": "",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 1,
+        "displayOrder": 3,
+        "image": "assets/dishes/alt-segundo-taco-merluza-romesco.png",
+        "needsReview": false
+      },
+      {
+        "id": "alt-segundo-wellington-espinaca-setas",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "segundo",
+        "name": "Wellington de espinaca y setas sobre cremoso de patata",
+        "ingredients": [
+          "espinacas",
+          "setas (champiñón, shiitake, seta de cardo, nameko y rebozuelo)",
+          "patata",
+          "pasta de soja (pimiento rojo, ajo, azúcar, sésamo tostado, aceite de sésamo, conservante: E270, extracto de levadura, koji-starter, jengibre en polvo)",
+          "leche de coco",
+          "jengibre en polvo",
+          "cebolla",
+          "puerro",
+          "espárrago triguero",
+          "pimientas",
+          "cebollino",
+          "heura (soja, almidón de maíz, aceites y grasas vegetales, harina de arroz, harina de guisantes, fibras vegetales (arroz, guisantes, llantén), goma xantana, E464, alcohol, harina de trigo sarraceno, transglutaminasa, ácido cítrico, aceite de oliva virgen extra, aromas, especias, vitamina B12)",
+          "agua",
+          "sal"
+        ],
+        "allergens": [
+          "soja",
+          "sésamo"
+        ],
+        "traces": [],
+        "notes": "",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 1,
+        "displayOrder": 4,
+        "image": "assets/dishes/alt-segundo-wellington-espinaca-setas.png",
+        "needsReview": false
+      }
+    ],
+    "postres": [
+      {
+        "id": "alt-postre-bizcocho-chocolate-almendra",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "postre",
+        "name": "Bizcocho de chocolate y almendra con cremoso de cacao y coulis de frambuesa",
+        "ingredients": [
+          "almendra",
+          "aceite de girasol",
+          "leche de soja",
+          "azúcar moreno",
+          "sal",
+          "cacao en polvo",
+          "almidón de maíz",
+          "azúcar",
+          "nuez moscada",
+          "comino",
+          "cardamomo",
+          "canela",
+          "pimienta negra",
+          "gasificantes",
+          "jarabe de azúcar invertido",
+          "frambuesa",
+          "hierbabuena"
+        ],
+        "allergens": [
+          "soja",
+          "frutos de cáscara"
+        ],
+        "traces": [],
+        "notes": "",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 2,
+        "displayOrder": 2,
+        "image": "assets/dishes/alt-postre-bizcocho-chocolate-almendra.png",
+        "needsReview": false
+      },
+      {
+        "id": "alt-postre-tarta-mousse-mascarpone",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "postre",
+        "name": "Tarta de mousse de mascarpone con coulis de fruta de la pasión",
+        "ingredients": [
+          "queso mascarpone (leche pasteurizada de vaca, ácido láctico)",
+          "queso crema (cuajo microbiano, cultivos lácteos, almidón y sal)",
+          "nata pasteurizada (estabilizantes)",
+          "azúcar",
+          "gelatina",
+          "fruta de la pasión",
+          "puré de fruta de la pasión",
+          "pectina",
+          "menta",
+          "frambuesa"
+        ],
+        "allergens": [
+          "leche"
+        ],
+        "traces": [],
+        "notes": "",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 2,
+        "displayOrder": 3,
+        "image": "assets/dishes/alt-postre-tarta-mousse-mascarpone.png",
+        "needsReview": false
+      },
+      {
+        "id": "alt-postre-fruta-temporada",
+        "type": "alternative",
+        "isOriginal": false,
+        "category": "postre",
+        "name": "Fruta de temporada",
+        "ingredients": [
+          "fruta variada de temporada"
+        ],
+        "allergens": [],
+        "traces": [],
+        "notes": "Documento indica «Alérgenos: no contiene».",
+        "sourcePdf": "Menú alternativo para invitados.pdf",
+        "sourcePage": 2,
+        "displayOrder": 4,
+        "image": "assets/dishes/alt-postre-fruta-temporada.png",
+        "needsReview": false
+      }
+    ]
+  },
+  "allergenLegend": [
+    {
+      "id": "gluten",
+      "label": "Gluten",
+      "description": "Cereales que contienen gluten (trigo, centeno, cebada, avena, espelta, kamut y sus derivados)."
+    },
+    {
+      "id": "crustaceos",
+      "label": "Crustáceos",
+      "description": "Crustáceos y productos a base de crustáceos."
+    },
+    {
+      "id": "huevo",
+      "label": "Huevo",
+      "description": "Huevos y productos a base de huevo."
+    },
+    {
+      "id": "pescado",
+      "label": "Pescado",
+      "description": "Pescado y productos a base de pescado."
+    },
+    {
+      "id": "cacahuete",
+      "label": "Cacahuete",
+      "description": "Cacahuetes y productos a base de cacahuetes."
+    },
+    {
+      "id": "soja",
+      "label": "Soja",
+      "description": "Soja y productos a base de soja."
+    },
+    {
+      "id": "leche",
+      "label": "Leche",
+      "description": "Leche y sus derivados (incluida la lactosa)."
+    },
+    {
+      "id": "frutos de cáscara",
+      "label": "Frutos de cáscara",
+      "description": "Frutos de cáscara y productos a base de frutos de cáscara."
+    },
+    {
+      "id": "apio",
+      "label": "Apio",
+      "description": "Apio y productos a base de apio."
+    },
+    {
+      "id": "mostaza",
+      "label": "Mostaza",
+      "description": "Mostaza y productos a base de mostaza."
+    },
+    {
+      "id": "sésamo",
+      "label": "Sésamo",
+      "description": "Granos de sésamo y productos a base de granos de sésamo."
+    },
+    {
+      "id": "sulfitos",
+      "label": "Sulfitos",
+      "description": "Dióxido de azufre y sulfitos en concentraciones superiores a 10 mg/kg o 10 mg/litro."
+    },
+    {
+      "id": "moluscos",
+      "label": "Moluscos",
+      "description": "Moluscos y productos a base de moluscos."
+    }
+  ],
+  "searchConfig": {
+    "allergens": {
+      "gluten": {
+        "keywords": [
+          "gluten",
+          "trigo",
+          "harina de trigo",
+          "cebada",
+          "centeno",
+          "avena",
+          "espelta",
+          "kamut",
+          "pasta brick"
+        ]
+      },
+      "trigo": {
+        "keywords": [
+          "trigo",
+          "harina de trigo",
+          "gluten"
+        ],
+        "aliases": [
+          "gluten"
+        ]
+      },
+      "pescado": {
+        "keywords": [
+          "pescado",
+          "bacalao",
+          "atún",
+          "merluza"
+        ]
+      },
+      "huevo": {
+        "keywords": [
+          "huevo",
+          "huevos"
+        ]
+      },
+      "leche": {
+        "keywords": [
+          "leche",
+          "lactosa",
+          "mantequilla",
+          "mascarpone",
+          "nata",
+          "queso",
+          "lácteo",
+          "lácteos"
+        ]
+      },
+      "lactosa": {
+        "keywords": [
+          "lactosa",
+          "leche"
+        ],
+        "aliases": [
+          "leche"
+        ]
+      },
+      "soja": {
+        "keywords": [
+          "soja",
+          "edamame",
+          "tofu",
+          "heura",
+          "lecitina de soja",
+          "salsa de soja",
+          "pasta de soja"
+        ]
+      },
+      "sulfitos": {
+        "keywords": [
+          "sulfitos",
+          "sulfito",
+          "vino",
+          "vinagre de jerez",
+          "orejones"
+        ]
+      },
+      "sésamo": {
+        "keywords": [
+          "sésamo",
+          "sesamo",
+          "aceite de sésamo",
+          "sésamo tostado"
+        ]
+      },
+      "frutos de cáscara": {
+        "keywords": [
+          "frutos de cáscara",
+          "frutos secos",
+          "almendra",
+          "nuez",
+          "avellana",
+          "cacahuete"
+        ]
+      },
+      "almendra": {
+        "keywords": [
+          "almendra",
+          "almendras"
+        ],
+        "aliases": [
+          "frutos de cáscara"
+        ]
+      },
+      "cacahuete": {
+        "keywords": [
+          "cacahuete",
+          "cacahuetes",
+          "maní"
+        ]
+      },
+      "apio": {
+        "keywords": [
+          "apio"
+        ]
+      },
+      "mostaza": {
+        "keywords": [
+          "mostaza"
+        ]
+      },
+      "moluscos": {
+        "keywords": [
+          "moluscos",
+          "molusco",
+          "vieira",
+          "mejillón",
+          "calamar",
+          "pulpo"
+        ]
+      },
+      "crustáceos": {
+        "keywords": [
+          "crustáceos",
+          "crustaceos",
+          "crustáceo",
+          "gamba",
+          "langostino",
+          "cangrejo"
+        ]
+      }
+    }
+  }
+}

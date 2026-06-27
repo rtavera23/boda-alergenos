@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú especial para invitados con alergias — Boda Dolo &amp; Radha">
+  <title>Menú especial · Dolo &amp; Radha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header">
+    <p class="site-header__eyebrow">Dolo &amp; Radha · 25 julio 2026</p>
+    <p class="site-header__venue">Masía San Antonio de Poyo</p>
+  </header>
+
+  <main id="main-content" class="main">
+    <section class="hero card" aria-labelledby="hero-title">
+      <h1 id="hero-title">Menú especial para invitados con alergias</h1>
+      <p class="hero__subtitle">Revisa el menú elegido por los novios y selecciona un sustituto solo para los platos que no puedas tomar.</p>
+      <aside class="warning-card" role="note">
+        <p>Esta página no sustituye la revisión de la Masía. Si tienes una alergia grave o dudas con las trazas, indícalo en comentarios para revisarlo con el equipo.</p>
+      </aside>
+    </section>
+
+    <form id="menu-form" class="menu-form" novalidate>
+      <section class="card form-section" aria-labelledby="guest-heading">
+        <h2 id="guest-heading">Tus datos</h2>
+        <div class="form-grid">
+          <div class="field">
+            <label for="firstName">Nombre <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="lastName">Apellidos <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+          </div>
+          <div class="field field--full">
+            <label for="allergyInput">Alergias o intolerancias <span class="required" aria-hidden="true">*</span></label>
+            <div class="allergy-chip-field" id="allergyChipField">
+              <div class="allergy-chip-list" id="allergyChips" role="list" aria-label="Alergias añadidas"></div>
+              <input type="text" id="allergyInput" autocomplete="off"
+                placeholder="Escribe y pulsa Enter o coma…"
+                aria-describedby="allergy-helper-desc">
+            </div>
+            <p id="allergy-helper-desc" class="field-hint">Puedes escribir varias separadas por coma. Ej: gluten, leche, frutos secos.</p>
+          </div>
+        </div>
+        <input type="hidden" id="table" name="table" value="">
+      </section>
+
+      <section class="card" aria-labelledby="original-menu-heading">
+        <h2 id="original-menu-heading">Menú elegido por los novios</h2>
+        <p class="section-intro">Estos son los platos del menú de la boda. Revísalos antes de elegir alternativas.</p>
+        <div id="original-menu" class="original-menu" aria-live="polite"></div>
+      </section>
+
+      <section id="selection-section" class="card selection-section" aria-labelledby="selection-heading">
+        <h2 id="selection-heading">Elige tus platos</h2>
+        <p class="section-intro section-intro--compact">Elige una opción por curso. Puedes mantener el menú original o seleccionar una alternativa.</p>
+        <div id="course-selection" class="course-selection"></div>
+      </section>
+
+      <section class="card form-section" aria-labelledby="comments-heading">
+        <h2 id="comments-heading">Comentarios para la Masía</h2>
+        <div class="field">
+          <label for="comments" class="visually-hidden">Comentarios para la Masía</label>
+          <textarea id="comments" name="comments" rows="3"
+            placeholder="Ej: alergia grave a frutos secos, no puedo tomar trazas…"></textarea>
+        </div>
+      </section>
+
+      <section class="card summary-section" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Resumen de tu selección</h2>
+        <dl id="summary" class="summary"></dl>
+      </section>
+
+      <div class="hp-field" aria-hidden="true">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div class="submit-wrap">
+        <button type="submit" id="submit-btn" class="btn btn--primary btn--large">Enviar selección</button>
+        <p id="status-message" class="status-message" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>Boda Dolo &amp; Radha · <a href="https://bodadoloyradha.com">bodadoloyradha.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

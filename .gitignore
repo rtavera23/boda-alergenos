@@ -1,0 +1,13 @@
+.source-docs/
+.DS_Store
+node_modules/
+.env
+.venv/
+.playwright-mcp/
+.cursor/
+qa-mobile-*.png
+desktop-layout.png
+mobile-layout.png
+*credentials*.json
+*token*.json
+client_secret*.json
