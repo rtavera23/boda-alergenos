@@ -416,7 +416,7 @@ async function submitForm(e) {
   }
 
   if (result.ok) {
-    setStatus("Gracias, hemos recibido tu selección de menú especial.", "success");
+    setStatus("Gracias, hemos recibido tu selección. La revisaremos y la trasladaremos a la Masía.", "success");
     return;
   }
 

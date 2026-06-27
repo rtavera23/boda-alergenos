@@ -21,15 +21,16 @@
   <main id="main-content" class="main">
     <section class="hero card" aria-labelledby="hero-title">
       <h1 id="hero-title">Menú especial para invitados con alergias</h1>
-      <p class="hero__subtitle">Revisa el menú elegido por los novios y selecciona un sustituto solo para los platos que no puedas tomar.</p>
+      <p class="hero__subtitle">Hemos preparado esta página para recoger de forma ordenada las alergias, intolerancias y posibles cambios de menú. Revisa primero el menú elegido por nosotros y, si algún plato no puedes tomarlo, selecciona una alternativa solo para ese plato.</p>
       <aside class="warning-card" role="note">
-        <p>Esta página no sustituye la revisión de la Masía. Si tienes una alergia grave o dudas con las trazas, indícalo en comentarios para revisarlo con el equipo.</p>
+        <p>La información de alérgenos y alternativas está basada en la documentación facilitada por la Masía. Esta página nos ayuda a organizar vuestras respuestas, pero cualquier alergia grave, intolerancia importante o duda con trazas será revisada con el equipo de la Masía.</p>
       </aside>
     </section>
 
     <form id="menu-form" class="menu-form" novalidate>
       <section class="card form-section" aria-labelledby="guest-heading">
         <h2 id="guest-heading">Tus datos</h2>
+        <p class="section-intro section-intro--compact">Indícanos tus alergias o intolerancias para que podamos trasladarlo correctamente a la Masía.</p>
         <div class="form-grid">
           <div class="field">
             <label for="firstName">Nombre <span class="required" aria-hidden="true">*</span></label>
@@ -55,22 +56,23 @@
 
       <section class="card" aria-labelledby="original-menu-heading">
         <h2 id="original-menu-heading">Menú elegido por los novios</h2>
-        <p class="section-intro">Estos son los platos del menú de la boda. Revísalos antes de elegir alternativas.</p>
+        <p class="section-intro">Este es el menú principal que hemos elegido para la boda. Si puedes tomar estos platos, no hace falta que cambies nada: puedes dejar seleccionadas las opciones del menú original.</p>
         <div id="original-menu" class="original-menu" aria-live="polite"></div>
       </section>
 
       <section id="selection-section" class="card selection-section" aria-labelledby="selection-heading">
         <h2 id="selection-heading">Elige tus platos</h2>
-        <p class="section-intro section-intro--compact">Elige una opción por curso. Puedes mantener el menú original o seleccionar una alternativa.</p>
+        <p class="section-intro section-intro--compact">Selecciona una opción para cada plato. Mantén el menú original siempre que puedas tomarlo y elige una alternativa solo en los platos que necesites cambiar.</p>
         <div id="course-selection" class="course-selection"></div>
       </section>
 
       <section class="card form-section" aria-labelledby="comments-heading">
         <h2 id="comments-heading">Comentarios para la Masía</h2>
+        <p class="section-intro section-intro--compact">Usa este espacio para aclarar cualquier detalle importante que debamos revisar con la Masía.</p>
         <div class="field">
           <label for="comments" class="visually-hidden">Comentarios para la Masía</label>
           <textarea id="comments" name="comments" rows="3"
-            placeholder="Ej: alergia grave a frutos secos, no puedo tomar trazas…"></textarea>
+            placeholder="Ej: alergia grave a frutos secos, no puedo tomar trazas, intolerancia a la lactosa…"></textarea>
         </div>
       </section>
 
